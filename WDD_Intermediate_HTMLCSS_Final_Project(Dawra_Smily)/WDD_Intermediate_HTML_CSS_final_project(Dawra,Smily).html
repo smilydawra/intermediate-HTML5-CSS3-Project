@@ -1,0 +1,170 @@
+<!doctype html>
+ 
+<html lang="en">
+  <head>
+    
+<!--
+//////////////////////////////////////
+//                                  //
+//    HTML5 File For Final Project  //
+//                                  //
+//      Intermediate HTML5/CSS      //
+//                                  //
+//     Submitted To: Brent Scott    //   
+//    Submitted From: Smily dawra   //  
+//                                  // 
+//       Date: November 6, 2019     // 
+//                                  //
+//////////////////////////////////////
+-->
+    <title>Page Structure - HTML5</title>
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900&display=swap" rel="stylesheet">
+    <link href="styles/final_project.css"
+          rel="stylesheet"
+          type="text/css"
+          media="screen" />
+  </head> 
+
+  <body>
+    <div id="wrapper"> <!-- "container" for the main page -->
+    <!-- Main Layout page - Header -->
+      <header>  
+        <img id="box_logo" src="Images/main_logo.png" alt="MBS Logo" />
+        <img id="services_logo" src="Images/services.png" alt="Services Inc." />
+      </header>
+      
+    <!-- Main Layout page - Navigation -->
+      <nav>
+        <ul> <!-- Navigation list items  -->
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li style="background-color: #63778b;"><a style="color: #fff;" href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+      
+    <!-- Main Layout page - Section(Main Content) -->
+      <section>
+        <h1>Contact Us</h1>
+        
+    <!-- Starting of Contact form  -->
+        <form id="first_form" 
+          name="first_form"
+          method="post"
+          action="http://www.scott-media.com/test/form_display.php"> <!-- action tells the form where to send the data.-->
+      
+          <fieldset>
+            <!-- Textboxes -->
+            <legend>Personal Info</legend>  
+            <p>
+              <label for="first_name">First Name:<strong>*</strong></label>   
+              <input type="text" 
+               id="first_name"
+               name="first_name"
+               size="25"
+               maxlength="40"
+               required
+               />
+            </p>
+      
+            <p>
+              <label for="last_name">Last Name:<strong>*</strong></label>
+              <input type="text" id="last_name" name="last_name" required />
+            </p>
+      
+            <p>
+              <label for="pass_word">Password:<strong>*</strong></label>
+              <input type="password" name="pass_word" id="pass_word" required />
+            </p>   
+            <p>
+              <label for="email_address">Email:<strong>*</strong></label>
+              <input type="email" name="email_address" id="email_address" required />
+            </p>
+      
+            <p>
+              <label for="phone">Phone Number:<strong>*</strong></label>
+              <input type="tel" name="phone" id="phone" required />
+            </p>
+      
+            <p>
+              <label for="age">Age:<strong>*</strong></label>
+              <input type="number" id="age" name="age" required/>
+            </p>
+            <!--Radio Buttons  -->
+            <p>
+              Please choose the service:<br />
+              <input type="radio" id="service1" name="service" value="Service 1" />
+              <label for="service1">Service One</label><br />
+        
+              <input type="radio" id="service2" name="service" value="Service 2" />
+              <label for="service2">Service Two</label><br />
+        
+              <input type="radio" id="service3" name="service" value="Service 3" />
+              <label for="service3">Service Three</label><br />
+        
+              <input type="radio" id="service4" name="service" value="Service 4" />
+              <label for="service4">Service Four</label><br />
+        
+            </p>
+            
+            <!-- Checkboxes -->
+            <p>
+              Contact Preferences:<br />
+              <input type="checkbox" id="email" name="email" value="email" />
+              <label for="email">Email</label><br />        
+        
+              <input type="checkbox" id="phone_number" name="phone_number" value="phone_number" />
+              <label for="phone_number">Phone</label><br />        
+        
+              <input type="checkbox" id="text" name="text" value="text" />
+              <label for="text">Text</label><br /> 
+            
+            </p>
+            <!-- Select Menu -->
+            <p>
+              <select id="contact_time" name="contact_time" >
+                <option value="No contact availability selected">Please Select your Availability</option>
+                <optgroup label="Monday-Friday">
+                  <option value="morning">Morning</option>
+                  <option value="afternoon">Afternoon</option>
+                  <option value="evening">Evening</option>
+                </optgroup>          
+              </select>
+            </p>
+
+          </fieldset> 
+          <div id="submit">
+            <p>
+              <input type="checkbox" id="subscribe" name="subscribe" value="Yes" checked />
+              <label for="subscribe">Subscribe to our newsletter</label>
+            </p>
+      
+            <p>
+              <input type="submit" value="Send Form Please" />&nbsp;
+              <input type="reset" value="Clear Form"/>&nbsp;
+            </p>
+          </div>  
+        </form> <!-- End of Form -->
+      </section> 
+      
+    <!-- Main Layout page - Footer -->  
+      <footer>
+        <p>
+          <a href="#">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Services</a>
+          <a href="#">Gallery</a>
+          <a href="#">Contact</a>
+        </p>
+        <div id="end_page">
+          Copyright &copy; 2019
+          <a href="#"><img class="footer_logo" src="Images/main_logo.png" alt="MBS Logo" /></a>
+          <a href="#"><img class="footer_services" src="Images/services.png" alt="Services Logo" /></a>
+        </div>
+      </footer>
+      
+    </div>
+  </body>
+</html>

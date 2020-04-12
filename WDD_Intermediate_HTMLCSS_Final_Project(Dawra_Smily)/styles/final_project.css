@@ -1,0 +1,231 @@
+/*
+//////////////////////////////////////
+//             External             //
+//    CSS File For Final Project    //
+//                                  //
+//      Intermediate HTML5/CSS      //
+//                                  //
+//     Submitted To: Brent Scott    //   
+//    Submitted From: Smily dawra   //  
+//                                  // 
+//       Date: November 6, 2019     // 
+//                                  //
+//////////////////////////////////////
+*/
+
+body{
+  font-family: Raleway, Arial, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  background-image: url(background_Images/green-leaves.jpg);
+  background-attachment: fixed;
+  background-repeat: repeat-x;
+  background-color: #cff7ff;
+}
+      
+#wrapper{
+  width: 960px;
+  margin: 0 auto;
+  background-color: #c8def3;
+  line-height: 1.2em;
+}
+      
+/* Layout for main page */
+header{
+  background-color: #fff;
+  height: 120px;
+  border-bottom: 1px solid #666;
+  margin-bottom: 6px;
+  background-image: url(background_Images/body_bg.jpg);
+}
+
+#box_logo{
+  padding: 15px 0 15px 15px;
+  height: 90px;
+  width: 200px;
+}
+
+#services_logo{
+  padding: 15px 0 25px 0;
+  height: 50px;
+  width: 350px;
+}
+
+nav{
+  float:left;
+  width: 200px;
+}
+
+/* Styles for navigation */
+
+nav ul{
+  margin: 0;
+  padding: 0;
+  border: 1px solid #000;
+  background-color: #def;
+  border-top: 19px solid #63778b;
+}
+
+nav ul li{
+  list-style-type: none;
+}
+      
+nav ul li a{
+  font-size: 1.2em;
+  padding: 14px 35px 13px 35px;
+  display: block;
+  text-decoration: none;
+  color: #000;
+  font-weight: 400;
+}
+
+nav ul li a:hover{
+  background-color: #63778b;
+  color:#fff;
+}
+
+section{
+  min-height: 450px;
+  background-color: #c8def3;
+  padding-top:3px;
+  padding-bottom:3px;
+  margin-left:200px;
+
+}
+
+h1{
+  color: #000;
+  border-bottom: 3px solid #2f4357;
+  font-weight: normal;
+  font-size: 1.8em;
+  margin-left:15px;
+  padding-bottom: 6px;
+  margin-top: 0;
+}
+
+/* Styles for Form */
+#first_form fieldset{
+  background-color: #fff;
+  width: 600px;
+  border: 1px solid #400;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  margin-top:0px;
+}
+      
+#first_form legend{
+  background-color: #63778b;
+  color: #fff;
+  padding: 5px;
+}
+
+#first_form label{
+  width: 120px;
+  display: block;
+  float: left;
+  clear: both;
+}
+
+#first_form input[type="text"],
+#first_form input[type="password"],
+#first_form input[type="email"],
+#first_form input[type="number"],
+#first_form input[type="date"],
+#first_form input[list="country"],
+#first_form input[type="tel"]{
+  border: 1px solid #004;
+  width: 300px;
+  height: 20px;
+  background-color: #eee;
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  word-spacing: normal;
+  letter-spacing: normal;
+}
+
+#first_form strong{
+  font-weight: 900;
+  color:#f00;
+}
+
+#first_form input[type="text"]:hover,
+#first_form input[type="password"]:hover,
+#first_form input[type="email"]:hover,
+#first_form input[type="number"]:hover,
+#first_form input[type="date"]:hover,
+#first_form input[list="country"]:hover,
+#first_form input[type="tel"]:hover{
+  background-color: #c8def3;
+}
+
+#first_form input + label{
+  float: none;
+  display: inline;
+  width: auto;
+}
+
+#first_form input{
+  width: auto;
+}
+
+#first_form input[type="submit"],
+#first_form input[type="reset"]{
+  border: 2px solid #000;
+  padding: 6px;
+  background-color: #fff;
+  font-weight: 700;
+}
+
+#first_form input[type="submit"]:hover,
+#first_form input[type="reset"]:hover{
+  background-color: #c99;
+}
+
+#first_form select{
+  background-color: #ccc;
+}
+
+#submit{
+  margin-bottom: 20px;
+  margin-left: 15px;
+  margin-top:0px;
+}
+
+/* Styles for footer  */
+footer{
+  height:100px;
+  background-color: #63778b;
+  color:#fff;
+}
+
+footer p{
+  padding: 10px;
+}
+
+footer p a{
+  padding: 0 55px 0 55px; 
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+}
+
+footer p a:hover{
+  color:#fff;
+}
+.footer_logo{
+  height:30px;
+  width:100px;
+  padding-left: 5px;
+}
+
+.footer_services{
+  height:18px;
+  width:100px;
+}
+
+#end_page{
+  padding-left: 300px;
+}
+
